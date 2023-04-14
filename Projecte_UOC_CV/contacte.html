@@ -4,37 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\style.css" />
     <title>CV Pep Pallarés - Contacte</title>
   </head>
   <body>
+    <nav class="navBar">
+      <img class="navLogo" src="assets\img\home-outline.svg" alt="home" />
+      <ul class="navUl">
+        <li class="navLi"><a class="navItem" href="/index.html">Inici</a></li>
+        <li class="navLi"><a class="navItem" href="/cv.html">CV</a></li>
+        <li class="navLi"><a class="navItem" href="/contacte.html">Contacte</a></li>
+      </ul>
+    </nav>
     <header>
-      <img src="assets\img\logo.jpg" alt="Logo" />
-      <nav>
-        <ul>
-          <li>
-            <a href="/index.html">Inici</a>
-          </li>
-          <li>
-            <a href="/cv.html">Curriculum vitae</a>
-          </li>
-          <li>
-            <a href="/contacte.html">Contacte</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="containerHeader">
+        <img class="imgHeader" src="assets\img\contact.jpg" alt="imgHeader" />
+        <h1 class="titleHeader">Contacte</h1>
+      </div>
     </header>
-
-    <section>
-      <h1>Contacte</h1>
-      <img src="assets\img\contact.jpg" alt="titleImg" />
-    </section>
 
     <section id="contactForm">
       <h2>Parlem!</h2>
 
-      <form action="">
+      <form class="contactForm">
         <label for="f_name">Nom</label>
-        <input type="text" name="name" id="f_name" placeholder="escriu el teu nom" />
+        <input type="text" name="name" id="f_name" placeholder="Escriu el teu nom" />
         <br />
 
         <label for="f_name">Correu electrònic</label>
@@ -44,22 +38,20 @@
         <label for="f_tarea">Comentaris</label>
         <textarea name="comments" id="f_tarea" cols="30" rows="10"></textarea>
         <br />
-
-        <input type="checkbox" name="accept" id="f_accept" />
-        <label for="f_accept">
-          He llegit i accepto la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673&p=20230221&tn=1">política de privacitat</a>
-        </label>
-        <br />
-
-        <input type="submit" value="Enviar" />
+        <div class="formCheckboxLine">
+          <input type="checkbox" name="accept" id="f_accept" />
+          <p>He llegit i accepto la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673&p=20230221&tn=1">política de privacitat</a></p>
+          <br />
+        </div>
+        <input class="formSendButton" type="submit" value="Enviar" />
       </form>
     </section>
 
     <footer>
-      <img src="assets\img\logo-facebook.svg" alt="Facebook" />
-      <img src="assets\img\logo-linkedin.svg" alt="Linkedin" />
-      <img src="assets\img\logo-instagram.svg" alt="Instagram" />
-      <img src="assets\img\logo-twitter.svg" alt="Twitter" />
+      <img class="footerItem" src="assets\img\logo-facebook.svg" alt="Facebook" />
+      <img class="footerItem" src="assets\img\logo-linkedin.svg" alt="Linkedin" />
+      <img class="footerItem" src="assets\img\logo-instagram.svg" alt="Instagram" />
+      <img class="footerItem" src="assets\img\logo-twitter.svg" alt="Twitter" />
     </footer>
   </body>
 </html>

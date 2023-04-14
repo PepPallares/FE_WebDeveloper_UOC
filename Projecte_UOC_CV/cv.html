@@ -4,46 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\style.css" />
     <title>CV Pep Pallarés</title>
   </head>
   <body>
-    <header>
-      <img src="assets\img\logo.jpg" alt="Logo" />
-      <nav>
+    <nav class="navBar">
+      <img class="navLogo" src="assets\img\home-outline.svg" alt="home" />
+      <ul class="navUl">
+        <li class="navLi"><a class="navItem" href="/index.html">Inici</a></li>
+        <li class="navLi"><a class="navItem" href="/cv.html">CV</a></li>
+        <li class="navLi"><a class="navItem" href="/contacte.html">Contacte</a></li>
+      </ul>
+    </nav>
+    <header class="gridCVHeader">
+      <h1 class="gridHeader">Pep Pallarés Reverté</h1>
+      <nav class="gridColumnWide">
         <ul>
-          <li>
-            <a href="/index.html">Inici</a>
-          </li>
-          <li>
-            <a href="/cv.html">Curriculum vitae</a>
-          </li>
-          <li>
-            <a href="/contacte.html">Contacte</a>
-          </li>
+          <li><a href="#personalInformation">Dades personals</a></li>
+          <li><a href="#profesionalExperience">Experiència professional</a></li>
+          <li><a href="#education">Formació</a></li>
+          <li><a href="#languages">Idiomes</a></li>
         </ul>
       </nav>
+
+      <picture class="gridColumnSmall">
+        <img src="assets\img\avatar.jpg" alt="Avatar" />
+      </picture>
     </header>
 
     <section>
-      <h1>Pep Pallarés Reverté</h1>
-        <nav>
-          <ul>
-            <li><a href="#personalInformation">Dades personals</a></li>
-            <li><a href="#profesionalExperience">Experiència professional</a></li>
-            <li><a href="#education">Formació</a></li>
-            <li><a href="#languages">Idiomes</a></li>
-          </ul>
-        </nav>
-
-        <picture>
-          <img src="assets\img\avatar.jpg" alt="Avatar" />
-        </picture>
-      </section>
-
-    <section>
       <article class="cv_articles" id="personalInformation">
-        <h2>DADES PERSONALS</h2>
-        <span>
+        <h2 class="gridHeader">DADES PERSONALS</h2>
+        <span class="gridCVArticles">
           <b>DNI:</b> 47938325-T <br />
           <b>Direcció:</b> Carrer Oviedo nº9 2C Amposta 43870 <br />
           <b>Telèfon:</b> 658641363 <br />
@@ -53,8 +45,8 @@
       </article>
 
       <article class="cv_articles" id="profesionalExperience">
-        <h2>EXPERIÈNCIA PROFESSIONAL</h2>
-        <ul>
+        <h2 class="gridHeader">EXPERIÈNCIA PROFESSIONAL</h2>
+        <ul class="gridCVArticles">
           <li>
             <b>Technical Game producer i Backend developer a Space Go Games</b> (Gener 2023 - actual)<br />
             <span>
@@ -84,8 +76,8 @@
       </article>
 
       <article class="cv_articles" id="education">
-        <h2>FORMACIÓ</h2>
-        <ul>
+        <h2 class="gridHeader">FORMACIÓ</h2>
+        <ul class="gridCVArticles">
           <li>
             <b>Grau en enginyeria informàtica</b><br />
             Universitat oberta de Catalunya 2018
@@ -121,8 +113,8 @@
       </article>
 
       <article class="cv_articles" id="languages">
-        <h2>IDIOMES</h2>
-        <table>
+        <h2 class="gridHeader">IDIOMES</h2>
+        <table class="gridCVArticles">
           <tr>
             <th>Idioma</th>
             <th>Nivell baix</th>
@@ -154,5 +146,11 @@
         </table>
       </article>
     </section>
+    <footer>
+      <img class="footerItem" src="assets\img\logo-facebook.svg" alt="Facebook" />
+      <img class="footerItem" src="assets\img\logo-linkedin.svg" alt="Linkedin" />
+      <img class="footerItem" src="assets\img\logo-instagram.svg" alt="Instagram" />
+      <img class="footerItem" src="assets\img\logo-twitter.svg" alt="Twitter" />
+    </footer>
   </body>
 </html>

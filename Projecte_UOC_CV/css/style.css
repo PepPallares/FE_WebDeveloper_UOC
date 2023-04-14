@@ -1,0 +1,384 @@
+html {
+  scroll-behavior: smooth;
+  padding: 1rem;
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+header {
+  justify-content: center;
+  border-bottom: 1px solid #000000;
+}
+
+.containerHeader {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.imgHeader {
+  width: 100%;
+  max-height: 300px;
+}
+
+.titleHeader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 4.5rem;
+}
+
+.navBar {
+  display: flex;
+  background-color: #000000;
+  align-items: center;
+  position: relative;
+
+  height: 64px;
+  left: 0px;
+  top: 0px;
+}
+
+.navItem {
+  padding: 0.5rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  text-align: center;
+  position: relative;
+
+  color: #ffffff;
+  justify-content: right;
+}
+
+.navLogo {
+  padding: 1rem;
+  display: flex;
+  justify-content: left;
+  position: relative;
+  width: inherit;
+  height: 60%;
+  filter: invert(100%);
+}
+
+.navUl {
+  display: flex;
+  justify-content: right;
+  align-self: right;
+  float: inline-end;
+  margin-right: 1rem;
+  margin-left: auto;
+}
+
+.navLi {
+  display: inline-flex;
+}
+
+.gridIndex {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-areas:
+    "header header"
+    "columnWide columnSmall";
+  justify-items: center;
+  align-items: center;
+}
+
+.gridIndexCards {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+  grid-template-areas:
+    "header header header header header"
+    ". gridColumnCard1 gridColumnCard2 gridColumnCard3 .";
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+.gridIndexExp {
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+  grid-template-areas:
+    "header header header header header"
+    ". gridColumnExp1 gridColumnExp2 gridColumnExp3 .";
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.gridIndexHobbies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header header header"
+    ". gridColumnCard1 gridColumnCard2 gridColumnCard3 ."
+    ". gridColumnCard4 gridColumnCard5 gridColumnCard6 .";
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.gridCVHeader {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 3fr;
+  grid-template-areas:
+    "header header header header"
+    ". columnWide columnSmall .";
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.gridHeader {
+  grid-area: header;
+}
+.gridColumnWide {
+  grid-area: columnWide;
+  padding: 3rem;
+}
+.gridColumnSmall {
+  grid-area: columnSmall;
+  padding: 3rem;
+}
+.gridColumnCard1 {
+  grid-area: gridColumnCard1;
+  padding: 3rem;
+}
+.gridColumnCard2 {
+  grid-area: gridColumnCard2;
+  padding: 3rem;
+}
+.gridColumnCard3 {
+  grid-area: gridColumnCard3;
+  padding: 3rem;
+}
+.gridColumnCard4 {
+  grid-area: gridColumnCard4;
+  padding: 3rem;
+}
+.gridColumnCard5 {
+  grid-area: gridColumnCard5;
+  padding: 3rem;
+}
+.gridColumnCard6 {
+  grid-area: gridColumnCard6;
+  padding: 3rem;
+}
+.gridColumnExp1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  grid-area: gridColumnExp1;
+  padding: 3rem;
+}
+.gridColumnExp2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  grid-area: gridColumnExp2;
+  padding: 3rem;
+}
+.gridColumnExp3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  grid-area: gridColumnExp3;
+  padding: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000000;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 5px 5px #000000;
+}
+
+.card > img {
+  width: 100%;
+  max-height: 30%;
+}
+
+.card > button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.dark {
+  background-color: #000000;
+}
+
+.dark > h2 {
+  color: white;
+}
+
+section > h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+form > label {
+  font-weight: bold;
+  padding-bottom: 0.4rem;
+}
+
+form > input {
+  shape-margin: 10px;
+}
+
+form > textarea {
+  shape-margin: 10px;
+}
+
+.formCheckboxLine {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.formCheckboxLine > p {
+  padding-left: 0.5rem;
+}
+
+.formSendButton {
+  width: fit-content;
+  padding: 1rem;
+  padding-top: .5rem;
+  padding-bottom: 0.5rem;
+  shape-margin: 16px;
+  align-self: center;
+  background-color: #ffffff;
+}
+
+.round {
+  transform: rotate(-90deg);
+  transition: all 1s ease-in-out;
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.percent {
+  position: absolute;
+  margin: auto;
+  font-size: 2rem;
+  color: white;
+}
+
+.gridIndexHobbies > div {
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.gridIndexHobbies > div > img {
+  width: 15%;
+  height: 15%;
+  padding-left: 5rem;
+}
+
+.gridColumnWide > ul {
+  justify-content: right;
+  align-items: center;
+}
+
+.gridColumnSmall > img {
+  justify-items: left;
+  justify-content: left;
+  align-items: center;
+}
+
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  padding-bottom: 2rem;
+}
+
+footer {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 48px;
+
+  background: #000000;
+  margin-top: 2rem;
+}
+
+.footerItem {
+  width: 40px;
+  height: 32px;
+  filter: invert(100%);
+  background: #ffffff;
+}
+
+.cv_articles{
+  display: grid;
+  font-family: "Montserrat";
+  font-style: normal;
+  text-align: left;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-areas:
+    "header header header"
+    ". cvColumn .";
+    padding-bottom: 3rem;
+}
+
+.gridCVArticles{
+  grid-area: cvColumn;
+}
+
+.cv_articles > table, th, td {
+  text-align: center;
+  border:  1px solid #000000;
+}
+
+.cv_articles > h2{
+  text-align: center;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
