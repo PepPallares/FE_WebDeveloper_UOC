@@ -306,7 +306,7 @@ form > textarea {
   align-items: center;
 }
 
-gridIndex.contactForm {
+.contactForm {
   display: flex;
   flex-direction: column;
   justify-content: left;
