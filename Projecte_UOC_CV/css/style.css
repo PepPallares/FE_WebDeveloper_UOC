@@ -257,7 +257,7 @@ form > textarea {
 .formSendButton {
   width: fit-content;
   padding: 1rem;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   shape-margin: 16px;
   align-self: center;
@@ -306,14 +306,13 @@ form > textarea {
   align-items: center;
 }
 
-
-.contactForm {
+gridIndex.contactForm {
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  padding-left: 20rem;
-  padding-right: 20rem;
+  padding-left: 20%;
+  padding-right: 20%;
   padding-bottom: 2rem;
 }
 
@@ -338,7 +337,7 @@ footer {
   background: #ffffff;
 }
 
-.cv_articles{
+.cv_articles {
   display: grid;
   font-family: "Montserrat";
   font-style: normal;
@@ -347,38 +346,134 @@ footer {
   grid-template-areas:
     "header header header"
     ". cvColumn .";
-    padding-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
-.gridCVArticles{
+.gridCVArticles {
   grid-area: cvColumn;
 }
 
-.cv_articles > table, th, td {
+.cv_articles > table,
+th,
+td {
   text-align: center;
-  border:  1px solid #000000;
+  border: 1px solid #000000;
 }
 
-.cv_articles > h2{
+.cv_articles > h2 {
   text-align: center;
 }
 
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
 
 @media only screen and (max-width: 600px) {
+  .cv_articles {
+    grid-template-columns: 0.1fr 5fr 0.1fr;
+  }
+  .titleHeader {
+    font-size: 3rem;
+  }
+  .gridIndexExp {
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas:
+      "header header header"
+      ". gridColumnExp1 ."
+      ". gridColumnExp2 ."
+      ". gridColumnExp3 .";
+  }
+  .gridIndexHobbies {
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+      "header header header"
+      ". gridColumnCard1 ."
+      ". gridColumnCard2 ."
+      ". gridColumnCard3 ."
+      ". gridColumnCard4 ."
+      ". gridColumnCard5 .";
+  }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 768px) {
+  .cv_articles {
+    grid-template-columns: 0.5fr 5fr 0.5fr;
+  }
+  .titleHeader {
+    font-size: 3.4rem;
+  }
+  .gridIndexExp {
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      ". gridColumnExp1 gridColumnExp2 ."
+      ". gridColumnExp3 . .";
+  }
+  .gridIndexCards {
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas:
+      "header header header"
+      ". gridColumnCard1 ."
+      ". gridColumnCard2 ."
+      ". gridColumnCard3 .";
+  }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 992px) {
+  .cv_articles {
+    grid-template-columns: 1fr 7fr 1fr;
+  }
+  .gridIndex {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "columnSmall"
+      "columnWide";
+    justify-items: center;
+    align-items: center;
+  }
+  .gridIndexExp {
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      ". gridColumnExp1 gridColumnExp2 ."
+      ". gridColumnExp3 . .";
+  }
+  .gridIndexHobbies {
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      ". gridColumnCard1 gridColumnCard2 ."
+      ". gridColumnCard3 gridColumnCard4 ."
+      ". gridColumnCard5 gridColumnCard6 .";
+  }
 }
 
-@media only screen and (min-width: 992px) {
-}
-
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px) {
+  .cv_articles {
+    grid-template-columns: 2fr 7fr 2fr;
+  }
+  .gridIndexCards {
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      ". gridColumnCard1 gridColumnCard2 ."
+      ". gridColumnCard3 . .";
+  }
+  .gridIndexHobbies {
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+      "header header header header header"
+      ". gridColumnCard1 gridColumnCard2 gridColumnCard3 ."
+      ". gridColumnCard4 gridColumnCard5 gridColumnCard6 .";
+  }
 }
